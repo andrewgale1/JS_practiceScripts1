@@ -1,0 +1,39 @@
+/*
+
+-—write a script to display today’s date in the format: mm/dd/yyyy
+
+
+var today = new Date();
+var month = today.getMonth();
+var day = today.getDate();
+var year = today.getFullYear();
+
+if (month <= 9) {month = '0' + month};
+if (day <= 9) {day = '0' + day};
+
+console.log("The date is: " + month +"/" + day +"/" + year);
+
+
+
+
+--Write a JavaScript program where the program takes a random integer between 1 to 10, 
+the user is then prompted to input a guess number. 
+If the user input matches with guess number, the program will display a message "Good Work",
+otherwise display a message "Not matched" 
+
+
+var randomNumber = Math.floor(Math.random()*10)+1;
+var userGuess = window.prompt("Enter a number between 1 and 10.");
+
+if (userGuess < 1){
+  alert("Choose a number between 1 and 10!");
+} else if (userGuess > 10){
+  alert("Choose a number between 1 and 10!");
+} else if (userGuess == randomNumber){
+  alert("Nice guess, you were correct!");
+} else {alert("No match, the number was " +randomNumber + " try again.");
+};        
+
+
+
+*/
