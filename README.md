@@ -1,2 +1,2 @@
-# JS_practiceScripts1
-two short practice scripts
+## JS_practiceScripts1
+These are two short practice scripts I wrote for a class practice drill...
