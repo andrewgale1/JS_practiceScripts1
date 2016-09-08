@@ -16,11 +16,17 @@ console.log("The date is: " + month +"/" + day +"/" + year);
 
 
 
---Write a JavaScript program where the program takes a random integer between 1 to 10, 
-the user is then prompted to input a guess number. 
-If the user input matches with guess number, the program will display a message "Good Work",
-otherwise display a message "Not matched".
-** I took it a little further and had it display the random number to the user as well.
+--Write a JavaScript program that creates a random integer between 1 and 10, 
+and promts the user to input a guess number. 
+If the user input matches the random number, the program will display a message "Good guess."
+otherwise it will display a message "Not matched".
+
+** I took it a little further and had it display the random number to the user as well, 
+   mostly so I would know it was working. This turned out to be a good move, because from this 
+   I realized it was returning a "No match..." message even when I was guessing the right number. 
+   I realized that the userguess variable might not actually be a number and be === the randomNumber variable, 
+   which seemed more likely to be an actual number...so I switched === to == in that else if statement 
+   and it worked... which made me very happy.
 
 
 var randomNumber = Math.floor(Math.random()*10)+1;
@@ -30,11 +36,12 @@ if (userGuess < 1){
   alert("Choose a number between 1 and 10!");
 } else if (userGuess > 10){
   alert("Choose a number between 1 and 10!");
+} else if (isNaN(userGuess)){
+  alert("That wasn't even a number...");
 } else if (userGuess == randomNumber){
   alert("Nice guess, you were correct!");
-} else {alert("No match, the number was " +randomNumber + " try again.");
-};        
-
+} else {alert("No match, the number was " +randomNumber + ". Would you like to try again?");
+}; 
 
 
 */
