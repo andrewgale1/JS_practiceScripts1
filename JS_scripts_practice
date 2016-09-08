@@ -1,6 +1,6 @@
 /*
 
--—write a script to display today’s date in the format: mm/dd/yyyy
+3-— write a script to display today’s date in the format: mm/dd/yyyy
 
 
 var today = new Date();
@@ -16,12 +16,11 @@ console.log("The date is: " + month +"/" + day +"/" + year);
 
 
 
---Write a JavaScript program that creates a random integer between 1 and 10, 
-and promts the user to input a guess number. 
-If the user input matches the random number, the program will display a message "Good guess."
-otherwise it will display a message "Not matched".
+8-- Write a JavaScript program that creates a random integer between 1 and 10, 
+and prompts the user to guess a number. If the user's number matches the random number, 
+the program will display a message "Good guess." Otherwise it will display a message "Not matched".
 
-** I took it a little further and had it display the random number to the user as well, 
+** I took it a little further and had it display other messages and the random number to the user as well, 
    mostly so I would know it was working. This turned out to be a good move, because from this 
    I realized it was returning a "No match..." message even when I was guessing the right number. 
    I realized that the userguess variable might not actually be a number and be === the randomNumber variable, 
